@@ -1,0 +1,26 @@
+{
+  "name": "webtask-contact-form",
+  "version": "1.0.0",
+  "description": "A node.js server side form to receive emails from a contact-form in a web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/systemdevs/webtask-contact-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/systemdevs/webtask-contact-form/issues"
+  },
+  "homepage": "https://github.com/systemdevs/webtask-contact-form#README",
+  "dependencies": {
+    "email-validator": "^1.0.7",
+    "nodemailer": "^2.6.4",
+    "request": "^2.78.0",
+    "request-promise": "^4.1.1",
+    "temporary-email-address-validator": "^1.0.3"
+  }
+}
