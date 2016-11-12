@@ -2,7 +2,7 @@
 
 A serverless contact form for your static page using [webtask.io](https://webtask.io/).
 
-Many times you find yourself creating a static HTML page. Everything goes smoothly until you need to implement a contact form. Maybe you've reached this repo after googling how to do this or maybe you've just implemented it using some of the PHP's ones because cheap hosting.
+Many times you find yourself creating a static HTML page. Everything goes smoothly until you need to implement a contact form. Maybe you've reached this repo after googling how to do this or maybe you've just implemented it using some of the PHP's ones out there because cheap hosting.
 
 Well... this solution implements the server-side part of a contact form in node.js in a way you can deploy it absolutely for free.
 
@@ -64,7 +64,10 @@ To sum up, make sure you have the following data:
 Now we're ready to deploy the task. Make sure you are logged into your webtask account in your console and run:
 
 ```sh
-wt create -s SMTP_PORT=465 -s SMTP_HOST=smtp.gmail.com -s SMTP_SECURE=true -s SMTP_REQUIRE_TLS=true -s SMTP_USER=youruser@gmail.com -s SMTP_PASS=yourpassword -s MAIL_TO=info@yourcompany.com -s RECAPTCHA_URL=https://www.google.com/recaptcha/api/siteverify -s RECAPTCHA_SECRET=yourRecapchaSecret --name contact-form ./build/webtask.js
+wt create -s SMTP_PORT=465 -s SMTP_HOST=smtp.gmail.com -s SMTP_SECURE=true \
+-s SMTP_REQUIRE_TLS=true -s SMTP_USER=youruser@gmail.com -s SMTP_PASS=yourpassword \
+-s MAIL_TO=info@yourcompany.com -s RECAPTCHA_URL=https://www.google.com/recaptcha/api/siteverify \
+-s RECAPTCHA_SECRET=yourRecapchaSecret --name contact-form ./build/webtask.js
 ```
 
 Make sure to replace the secrets with yours. The secrets are:
@@ -78,3 +81,9 @@ Make sure to replace the secrets with yours. The secrets are:
 - `MAIL_TO`: is the email address where you want to receive the submitted contact messages.
 - `RECAPTCHA_URL`: is the URL against the captcha challenge will be validated (ussualy <https://www.google.com/recaptcha/api/siteverify>).
 - `RECAPTCHA_SECRET`: is the app secret obtained from [reCaptcha](https://www.google.com/recaptcha/intro/index.html).
+
+## Usage
+Now that our webtask is deployed, please review the [webtask's docs](https://webtask.io/docs/101) for more
+info on how to execute it.
+
+You may also check the `examples` folder for a client-side example form.
