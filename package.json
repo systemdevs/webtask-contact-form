@@ -4,7 +4,7 @@
   "description": "A node.js server side form to receive emails from a contact-form in a web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,15 @@
   "dependencies": {
     "email-validator": "^1.0.7",
     "nodemailer": "^2.6.4",
+    "q": "^1.4.1",
     "request": "^2.78.0",
     "request-promise": "^4.1.1",
     "temporary-email-address-validator": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "proxyquire": "^1.7.10",
+    "should": "^11.1.1",
+    "sinon": "^1.17.6"
   }
 }
