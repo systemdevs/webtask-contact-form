@@ -1,5 +1,7 @@
 # webtask-contact-form
 
+[![Build Status](https://travis-ci.org/systemdevs/webtask-contact-form.svg?branch=master)](https://travis-ci.org/systemdevs/webtask-contact-form)
+
 A serverless contact form for your static page using [webtask.io](https://webtask.io/).
 
 Many times you find yourself creating a static HTML page. Everything goes smoothly until you need to implement a contact form. Maybe you've reached this repo after googling how to do this or maybe you've just implemented it using some of the PHP's ones out there because cheap hosting.
