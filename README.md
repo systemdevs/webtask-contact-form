@@ -1,6 +1,7 @@
 # webtask-contact-form
 
 [![Build Status](https://travis-ci.org/systemdevs/webtask-contact-form.svg?branch=master)](https://travis-ci.org/systemdevs/webtask-contact-form)
+[![Code Climate](https://codeclimate.com/github/systemdevs/webtask-contact-form/badges/gpa.svg)](https://codeclimate.com/github/systemdevs/webtask-contact-form)
 
 A serverless contact form for your static page using [webtask.io](https://webtask.io/).
 
